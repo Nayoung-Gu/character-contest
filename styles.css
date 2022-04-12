@@ -15,27 +15,31 @@
     transform: rotate(-40deg) translate(-10px);
   }
 }
+
 /* setting */
 :root {
   --pri: #ce705f;
   --sec: lightpink;
 }
+
 /* reset */
 body {
   margin: 0;
   padding: 0;
 }
+
 /* layout */
-/* design */
 *,
 *:after,
 *:before {
   box-sizing: border-box;
 }
 
+/* design */
 body {
   background: HoneyDew;
 }
+
 .rabbit {
   position: relative;
   top: 100px;
@@ -52,13 +56,13 @@ body {
   border: 7px solid #000;
   border-radius: 50%;
   background-color: var(--sec);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .rabbit .ear.left {
   left: 60px;
   transform: rotate(-30deg);
   border-radius: 40% 50% 0 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   animation: 귀왼쪽 0.8s infinite alternate;
 }
 
@@ -66,9 +70,9 @@ body {
   right: 40px;
   transform: rotate(30deg);
   border-radius: 40% 50% 0 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   animation: 귀오른쪽 0.5s infinite alternate;
 }
+
 .rabbit .earline.left {
   position: absolute;
   top: 50px;
@@ -96,6 +100,7 @@ body {
   transform: rotate(90deg);
   border-radius: 50% 0 0 60%;
 }
+
 .rabbit .face {
   position: absolute;
   bottom: 0;
@@ -120,6 +125,7 @@ body {
   border: 7px solid black;
   border-radius: 50% 50% 35% 35%;
 }
+
 .rabbit .eye {
   position: absolute;
   top: 55px;
@@ -128,9 +134,11 @@ body {
   border-radius: 50%;
   background-color: #000;
 }
+
 .eye.left {
   left: 130px;
 }
+
 .eye.right {
   right: 120px;
 }
@@ -144,12 +152,10 @@ body {
 }
 
 .eye.white.left {
-  position: absolute;
   left: 5px;
 }
 
 .eye.white.right {
-  position: absolute;
   right: 4px;
 }
 
@@ -162,6 +168,7 @@ body {
   border-radius: 40%;
   z-index: 2;
 }
+
 .rabbit .blush.left {
   left: 5px;
 }
@@ -170,6 +177,7 @@ body {
   right: 3px;
   width: 40px;
 }
+
 .nose {
   position: absolute;
   top: 75px;
@@ -180,6 +188,7 @@ body {
   border-radius: 40% 40% 50% 50%;
   z-index: 3;
 }
+
 .mouth {
   position: absolute;
   width: 150px;
@@ -198,6 +207,7 @@ body {
 }
 
 .mouthline {
+  position: absolute;
   width: 50px;
   height: 40px;
   border-radius: 50%;
@@ -206,12 +216,10 @@ body {
 }
 
 .mouthline.left {
-  position: absolute;
   left: 10px;
 }
 
 .mouthline.right {
-  position: absolute;
   right: 45px;
 }
 
@@ -238,6 +246,7 @@ body {
   top: 90px;
   z-index: -2;
 }
+
 .hand {
   display: flex;
 }
@@ -249,18 +258,15 @@ body {
   border: 7px solid black;
   background-color: white;
   border-radius: 70% 70% 50% 50%;
-  position: absolute;
+  position: relative;
+  top: 220px;
 }
 
 .left-hand {
-  position: relative;
-  top: 220px;
   left: 130px;
 }
 
 .right-hand {
-  position: relative;
-  top: 220px;
   left: 140px;
   z-index: 0;
 }
@@ -322,21 +328,19 @@ body {
   height: 23px;
   border-radius: 100% 30%;
   position: absolute;
+  left: 95px;
 }
 
 .carrot-top:first-child {
-  left: 95px;
   top: -10px;
 }
 
 .carrot-top:nth-child(2) {
-  left: 95px;
   top: 3px;
   transform: rotate(210deg);
 }
 
 .carrot-top:nth-child(3) {
-  left: 95px;
   top: 17px;
   transform: rotate(240deg);
 }
