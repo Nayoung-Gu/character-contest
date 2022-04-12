@@ -34,7 +34,7 @@ body {
 }
 
 body {
-  background: snow;
+  background: HoneyDew;
 }
 .rabbit {
   position: relative;
@@ -262,6 +262,7 @@ body {
   position: relative;
   top: 220px;
   left: 140px;
+  z-index: 0;
 }
 
 .hand-line {
@@ -299,4 +300,58 @@ body {
   border: 7px solid black;
   border-radius: 70% 70% 50% 50%;
   z-index: -5;
+}
+
+.carrot {
+  width: 120px;
+  height: 50px;
+  background-color: darkorange;
+  border: 7px solid black;
+  position: absolute;
+  left: 250px;
+  top: 220px;
+  border-radius: 150% 70% 70% 120%;
+  transform: rotate(-20deg);
+  z-index: 0;
+}
+
+.carrot-top {
+  border: 5px solid black;
+  background-color: green;
+  width: 23px;
+  height: 23px;
+  border-radius: 100% 30%;
+  position: absolute;
+}
+
+.carrot-top:first-child {
+  left: 95px;
+  top: -10px;
+}
+
+.carrot-top:nth-child(2) {
+  left: 95px;
+  top: 3px;
+  transform: rotate(210deg);
+}
+
+.carrot-top:nth-child(3) {
+  left: 95px;
+  top: 17px;
+  transform: rotate(240deg);
+}
+
+.carrot-line {
+  width: 22px;
+  height: 5px;
+  background-color: saddlebrown;
+  position: absolute;
+  top: 7px;
+  left: 60px;
+  transform: rotate(270deg);
+  border-radius: 5px;
+}
+
+.carrot-line:last-child {
+  left: 40px;
 }
